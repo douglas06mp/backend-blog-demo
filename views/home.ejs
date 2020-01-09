@@ -7,7 +7,7 @@
   <% posts.forEach(post => { %>
     <div class="post">
       <h3> <%= post.title %> </h3>
-      <p> <%= `${post.body.substring(0, 200)} ...` %> <a href="/posts/<%= post.title.toLowerCase() %>">Read More</a> </p>
+      <p> <%= `${post.content.substring(0, 200)} ...` %> <a href="/posts/<%= post._id %>">Read More</a> </p>
     </div>
   <% }) %>
 </div>
